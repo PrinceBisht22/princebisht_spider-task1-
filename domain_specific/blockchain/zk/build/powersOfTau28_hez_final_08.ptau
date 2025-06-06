@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>trusted-setup-hack</BucketName><RequestId>VR1DYAENQX686MW4</RequestId><HostId>0Sglq0cAg8Q9bdrheQlJzdrWHF2jf4J0iiCvbPzGxePds326XtkdqcaWGUN4Fi5rY0W77ZvfeCg=</HostId></Error>

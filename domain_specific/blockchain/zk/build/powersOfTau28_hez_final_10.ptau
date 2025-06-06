@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>trusted-setup-semaphore</BucketName><RequestId>67R92AKCNFJ25NXP</RequestId><HostId>bcRAIOOlk2E1JD1qomraJDFPyLvFDchTcAxXqd26v+WXZ6vls/OZE0Hz24UEyvV7YqrR2Bk6tHCxDQQtWtCWn7urPjf1uAJWvz4H2O5FmEU=</HostId></Error>
