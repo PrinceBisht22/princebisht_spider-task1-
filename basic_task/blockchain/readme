@@ -1,1 +1,13 @@
+**Polynomic Vault**
+Shamir’s Secret Sharing Scheme
 
+Secret Splitting
+	1.	The secret is used as the constant term in a randomly generated polynomial of degree k - 1, where k is the threshold number of shares needed to reconstruct the secret.
+	2.	This polynomial is then evaluated at different x values (1 through n) to generate n unique shares.
+	3.	Each share is a point (x, y) on the polynomial curve.
+
+Secret Reconstruction
+To recover the secret:
+	1. The user inputs any k valid shares.
+	2. The script applies Lagrange interpolation to reconstruct the polynomial at x = 0, which gives the original secret.
+All arithmetic is done in a finite field defined by a large prime (default: 2^127 - 1) to ensure correctness and security
