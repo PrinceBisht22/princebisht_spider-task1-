@@ -3,9 +3,9 @@ import { ethers } from 'ethers';
 import axios from 'axios';
 import contractABI from './abi.json';
 
-const CONTRACT_ADDRESS = '0x72edA77dB449966a38F6C1Fd7A050b90656566f2';
-const PINATA_API_KEY = 'e685d10d23f5034e069a';
-const PINATA_SECRET_API_KEY = 'e49804ea7215cebba25a0d02c27edaac079ded365dfc94c6ae7c381d1a6cc4e0';
+const CONTRACT_ADDRESS = 'e.......';
+const PINATA_API_KEY = 'e.......';
+const PINATA_SECRET_API_KEY = 'e........';
 
 function App() {
   const [pdfFile, setPdfFile] = useState(null);
