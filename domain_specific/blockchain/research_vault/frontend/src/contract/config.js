@@ -1,0 +1,3 @@
+export const PAPER_PORTAL_ADDRESS = process.env.REACT_APP_PAPER_PORTAL_ADDRESS;
+export const SBT_ADDRESS = process.env.REACT_APP_SBT_ADDRESS;
+export const VERIFIER_ADDRESS = process.env.REACT_APP_VERIFIER_ADDRESS;
