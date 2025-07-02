@@ -1,1 +1,64 @@
+# 🧠 Research Vault - Decentralized Paper Repository
+**Research Vault** is a decentralized application (DApp) that allows researchers to upload, store, and prove authorship of research papers on the Ethereum blockchain, while leveraging IPFS for decentralized file storage and zkSNARKs for privacy.
 
+## 🚀 Features
+
+### ✅ Level 1: Core Functionality
+- Upload research papers (PDFs).
+- Store paper metadata (title, author, timestamp, IPFS hash) on Ethereum.
+- Public feed of uploaded papers.
+- IPFS integration for decentralized file storage.
+
+### 🎓 Level 2: Soulbound NFTs
+- Automatically mint a **soulbound NFT** on each successful upload.
+- NFTs contain paper metadata and prove authorship.
+- Non-transferable (soulbound) nature prevents misuse.
+
+### 🔐 Level 3: ZK Proof Integration
+- Upload with a zero-knowledge proof to verify ownership without revealing paper contents.
+- ZK-SNARK circuit built using Circom & SnarkJS.
+
+---
+
+## 🧩 Tech Stack
+
+| Layer        | Tech                      |
+|-------------|---------------------------|
+| Blockchain   | Ethereum (Hardhat)        |
+| Storage      | IPFS (via `Pinata`) |
+| ZK Proofs    | Circom, SnarkJS           |
+| Frontend     | React.js                  |
+| Styling      | CSS       |
+| Contracts    | Solidity, OpenZeppelin    |
+
+## 📁 Project Structure
+research_vault/
+├── contracts/             # Smart contracts (Solidity)
+├── scripts/               # Deployment and test scripts
+├── zk/                    # Circom circuits and SnarkJS outputs
+├── frontend/              # React frontend app
+│   ├── public/
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   └── contract/
+├── .env                   # Environment variables (gitignored)
+├── hardhat.config.js      # Hardhat setup
+
+
+## ⚙️ How to Run Locally
+
+```bash
+git clone https://github.com/PrinceBisht22/princebisht_spider-task1-.git
+cd princebisht_spider-task1-/domain_specific/blockchain/research_vault
+
+# Install dependencies
+cd frontend
+npm install
+
+# Start the React frontend
+npm start
+
+# In a new terminal, go back to root and run:
+npx hardhat node
+npx hardhat run scripts/deploy.cjs --network localhost
